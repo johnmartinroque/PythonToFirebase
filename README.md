@@ -1,0 +1,36 @@
+Steps:
+pip install -r requirements.txt
+py collecton_data.py
+py train.py
+py camera.py
+
+Need to be replaced
+Speech.py
+cred = credentials.Certificate("credentials.json")
+firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://pyfire-da0f6-default-rtdb.firebaseio.com/'  # Replace with your Firebase URL
+})
+
+camera.py
+cred = credentials.Certificate("credentials.json")
+firebase_admin.initialize_app(cred, {
+    'databaseURL': 'https://pyfire-da0f6-default-rtdb.firebaseio.com/'
+})
+
+
+credentials.json
+{
+  "type": "service_account",
+  "project_id": "pyfire-da0f6",
+  "private_key_id": "a218113e077f8e676f0a16aa7993e83472d4b1ef",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDAVsmr595/R/Yt\nWHCceRDCE2n3u1nLD1BSy5bMcogYmhsMDG919OUNFe2C0/ChVzxTxUKu+BEXtBYP\nHbD5eXy+G2vFM2w9obUoQGwlhnDzpkCGEHB6GZBARVutrYF9DFd4CRXE06+WeH/g\nHQ39HL5FDDNvBkgKLXmsOW0gc4tkagPTlTAJjNy0fOhspuYqg37F7S7l5FBSbE2O\ngUaFiFs/5rsn4G0ZumqINBOB4zM7ee5dECaOl1bxXAdDd5wSRNZuYP2nSgF0aw8H\noskVBZYxN3MeqJJQx4SAamyxPGYb2BnvSSvVpqP9CQ182mRzKhP3mMDt7zKOjxIS\nqu7NfQu9AgMBAAECggEABqFh8inqNmt/pdBOyX79I65DbT5+src2GKZbX+YAoYB7\n08O5iNCqSoIw5RY6abAZnmdw/gvKf38+HMOCfKOXm5r+KjNfRtygxxmrNhFI8YYs\nOF2TKGCbOPoyOabUVHkexszhYDtOIwzHs7tXWDi5/t1bJIz94hlEx7nkZik1h36v\ncDvmmQDyRLYRMZYpco/xaScyW7GmZKX364NrtZ52KjS6E61lC5ip5RFmuzNbK70p\n1X1SivJh4wNZx07AMT06KIrkhBXcG+x0MPDbspry5TChtL9VZfB0tT01Ad2a/VXh\nLRBqupi64N7wHPFL9VGgttGiORuZz+UcRvyy4Tp1TQKBgQDrFqQtWQykKAYMjsnc\nlgErceXJwB5mfwWmN098yGL3EMEXSVoztpM3rE4YBGch+u4sXiQaXE0Sod3ZukDX\nE7VZC24nTDVYGJ7G2am/ugkHz4oLemLmyNyk9fSjPM8eQsn646rivQJHL83FoPrZ\n2Tve51xurebQoCcCsUR34tDR9wKBgQDRcquRibyF6uROHPa+O5ocnLhFB4FCxKRR\n4rHoV28rk+hOOLTAeG0R5xH7uWE1Mw/A1sqanQbz0DCen6coTvC0ki6PNciBa9mQ\neqe38aUsMt6eq0SVV0jpsrVkB/eKETxSAUcB4jMb0VGuSFFoSSWwdh2CBaiXbARM\nta7S6QKi6wKBgEVDdXm66+ONu0KF62mndI7FTwujJBHUyOhREYVVUPs0H3/p576m\nwzc6+ANRgMVdNkEyN3bgzQB5WnDk1GfJ8btbh8fiRzE+h8FUrhPEDxcTCbwaAfu3\nIHMl2D8kEm37BaF65IVLZNludzUMGfyHaYFiLzSY3hGHrha3/dFIrXe/AoGBAMmR\n8kw+opC/XrlOZqjt84NV0IGel2gKl5m28kEI5JSr5AZjzJDvVQjFuSjpYAQzABY2\noQXr2aUL177RJ65DSqR9ixGIUU883EWPxZnhlXTUACvz6C1Rs3o14xxCDplxvPuu\n/wdxCn7bFCEGuFIFE6CgDAX2LCqOahTpRTb1yPPBAoGBAIfYcauozUTyRNryKZh2\np1XkbeRA+y0nHhJFNzmbsLrzboiZ1xnXAFE+yOgcvuYbn4flBkEg0bcXokkKh+QQ\nboVwrB7KOV4Usam9n36Zoh9+Q+YoWPrsTQp3iKq49AtOQVaVIM7bAoUk2rMizUWD\nengjl/32RQVqPwfR+JoxFSsZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@pyfire-da0f6.iam.gserviceaccount.com",
+  "client_id": "109800928694264869489",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40pyfire-da0f6.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
+
