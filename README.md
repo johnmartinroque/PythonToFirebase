@@ -1,9 +1,9 @@
 Steps:
-pip install -r requirements.txt
-py collecton_data.py
-py train.py
-py camera.py
-
+1. pip install -r requirements.txt
+2. py collecton_data.py
+3. py train.py
+4. py camera.py
+##########################################
 Need to be replaced
 Speech.py
 cred = credentials.Certificate("credentials.json")
