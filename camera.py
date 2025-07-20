@@ -7,7 +7,20 @@ import time
 import pyttsx3
 import firebase_admin
 from firebase_admin import credentials, db
+from dotenv import load_dotenv
+import os
 
+load_dotenv()  # take environment variables from .env.
+
+# Set the path to the credentials for Firebase Admin
+cred_path = os.getenv("GOOGLE_APPLICATION_CREDENTIALS")
+
+import firebase_admin
+from firebase_admin import credentials
+
+if not firebase_admin._apps:
+    cred = credentials.Certificate(cred_path)
+    firebase_admin.initialize_app(cred)
 # Firebase setup
 cred = credentials.Certificate("credentials.json")
 firebase_admin.initialize_app(cred, {
